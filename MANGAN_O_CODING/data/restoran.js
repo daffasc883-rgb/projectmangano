@@ -1,0 +1,1 @@
+const restoran=[{id:'r1',nama:'MANGAN Chicken',rating:4.8},{id:'r2',nama:'Warung Mie O',rating:4.7},{id:'r3',nama:'O Pizza',rating:4.8},{id:'r4',nama:'Kedai Segar',rating:4.9}];

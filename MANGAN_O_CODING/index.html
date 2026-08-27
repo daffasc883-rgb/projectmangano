@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MANGAN O - Pesan Makanan</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">MANGAN O</a>
+  <nav><a href="pages/restoran.html">Restoran</a><a href="pages/pesanan.html">Pesanan</a><a href="pages/profil.html">Profil</a></nav>
+  <a class="cart-btn" href="pages/keranjang.html">🛒 <span id="cartCount">0</span></a>
+</header>
+<section class="hero">
+  <div><span class="badge">MAKAN ENAK, GAK PAKE RIBET</span><h1>Mau makan apa<br>hari ini?</h1>
+  <p>Pesan makanan favoritmu dari restoran pilihan di sekitar kamu.</p>
+  <a class="primary" href="pages/restoran.html">Pesan Sekarang</a></div>
+  <div class="hero-emoji">🍔</div>
+</section>
+<main class="container">
+  <section><div class="section-title"><h2>Kategori</h2></div><div id="categories" class="categories"></div></section>
+  <section><div class="section-title"><h2>Rekomendasi</h2><a href="pages/restoran.html">Lihat semua</a></div><div id="foodGrid" class="food-grid"></div></section>
+</main>
+<footer>MANGAN O © 2026 · Aplikasi pesan makanan</footer>
+<script src="data/kategori.js"></script><script src="data/makanan.js"></script><script src="js/app.js"></script><script src="js/home.js"></script>
+</body></html>

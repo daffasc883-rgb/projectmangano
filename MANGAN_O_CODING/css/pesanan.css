@@ -1,0 +1,22 @@
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .navbar,
+  .print-btn {
+    display: none;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .order-receipt {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
