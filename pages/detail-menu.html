@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Detail Menu - MANGAN O</title>
+<link rel="stylesheet" href="../css/style.css"></head><body><header class="navbar"><a class="logo" href="../index.html">MANGAN O</a><nav><a href="restoran.html">Restoran</a><a href="keranjang.html">Keranjang</a></nav></header>
+<main class="container"><div id="detail"></div></main><script src="../data/makanan.js"></script><script src="../js/app.js"></script><script>
+const id=new URLSearchParams(location.search).get('id'); const f=makanan.find(x=>x.id===id);
+document.getElementById('detail').innerHTML=f?`<div class="detail-card"><div class="detail-image">${f.emoji}</div><div><span class="badge">${f.kategori}</span><h1>${f.nama}</h1><p>${f.restoran}</p><h2>${formatRupiah(f.harga)}</h2><p>${f.deskripsi}</p><button class="primary" onclick="addToCart('${f.id}')">+ Tambah ke Keranjang</button></div></div>`:'<h2>Menu tidak ditemukan</h2>';
+</script></body></html>

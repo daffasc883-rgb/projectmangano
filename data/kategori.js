@@ -1,0 +1,1 @@
+const kategori=[['Semua','🍽️'],['Ayam','🍗'],['Mie','🍜'],['Pizza','🍕'],['Minuman','🥤'],['Dessert','🍰']];

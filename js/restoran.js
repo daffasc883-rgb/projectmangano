@@ -1,0 +1,3 @@
+const box=document.getElementById('restaurantList'),search=document.getElementById('search');
+function renderList(q=''){const list=makanan.filter(f=>(f.nama+' '+f.restoran).toLowerCase().includes(q.toLowerCase()));box.innerHTML=list.map(f=>`<article class="food-card"><div class="food-img">${f.emoji}</div><div class="food-info"><h3>${f.nama}</h3><div class="muted">${f.restoran} · ⭐ 4.8</div><div class="price">${formatRupiah(f.harga)}</div><a class="add-btn" style="display:block;text-align:center" href="detail-menu.html?id=${f.id}">Lihat Detail</a><button class="add-btn" style="margin-top:8px" onclick="addToCart('${f.id}')">+ Tambah</button></div></article>`).join('')}
+search.addEventListener('input',e=>renderList(e.target.value));renderList();
